@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#app {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 90%;
+    width: 320px; /* Define uma largura máxima para o layout */
+}
+
+input[type="number"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result span {
+    font-weight: bold;
+    color: #4CAF50; /* verde médio */
+}
+
+#result span::before {
+    content: "R$ ";
+}
+
+@media only screen and (max-width: 480px) {
+    #app {
+        width: 90%; /* Redefine a largura para se ajustar em telas menores */
+    }
+}

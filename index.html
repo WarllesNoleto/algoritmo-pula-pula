@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechamento de Caixa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Fechamento de Caixa</h1>
+        <div id="question"></div>
+        <input type="number" id="inputValue" step="0.01">
+        <button id="addButton">Adicionar</button>
+        <button id="nextButton" style="display:none;">Próximo</button>
+        <div id="result" style="display: none;">
+            <h2>Resumo do Caixa</h2>
+            <p><strong>Dinheiro:</strong> <span id="dinheiroResult"></span></p>
+            <p><strong>Cartão de Crédito:</strong> <span id="creditoResult"></span></p>
+            <p><strong>Desconto Crédito:</strong> <span id="creditoDescontoResult"></span></p>
+            <p><strong>Total Crédito Após Desconto:</strong> <span id="creditoTotalResult"></span></p>
+            <p><strong>Cartão de Débito:</strong> <span id="debitoResult"></span></p>
+            <p><strong>Desconto Débito:</strong> <span id="debitoDescontoResult"></span></p>
+            <p><strong>Total Débito Após Desconto:</strong> <span id="debitoTotalResult"></span></p>
+            <p><strong>PIX:</strong> <span id="pixResult"></span></p>
+            <p><strong>Total:</strong> <span id="totalResult"></span></p>
+            <p><strong>Total de Descontos:</strong> <span id="descontoTotalResult"></span></p>
+            <p><strong>Total Após Descontos:</strong> <span id="totalAposDescontoResult"></span></p>
+            <button id="backToStart">Voltar ao Início</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
